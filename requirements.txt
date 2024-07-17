@@ -5,7 +5,7 @@ pykrx
 streamlit_extras
 st_pages
 plotly
-yfinance
+yfinance==0.2.38
 matplotlib
 finance-datareader
 wordcloud
