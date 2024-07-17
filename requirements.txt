@@ -10,4 +10,3 @@ matplotlib
 finance-datareader
 wordcloud
 ptl
-time
