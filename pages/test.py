@@ -7,6 +7,9 @@ from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 import pickle
 import time 
+import sklearn
+from sklearn.ensemble import GradientBoostingRegressor
+import sklearn
 
 # pip install scikit-learn==1.2.2 로 설치.
 
@@ -86,8 +89,8 @@ def main():
             st.write("선택한 날짜에 해당하는 데이터가 없습니다.")
     
     if st.button("Predict", use_container_width=True):
-        model_path = './gradient_boosting_model_label_count.pkl'
-        model = load_model(model_path)
+        file_path = './gradient_boosting_model_label_count.pkl'
+        model = load_model(file_path)
         # my_bar = st.progress(0)
 
         # for percent_complete in range(100):
