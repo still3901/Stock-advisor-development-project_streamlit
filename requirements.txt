@@ -1,0 +1,15 @@
+streamlit
+numpy
+pandas
+pykrx
+streamlit_extras
+st_pages
+plotly
+yfinance
+matplotlib
+finance-datareader
+wordcloud
+ptl
+os
+pickle
+time
