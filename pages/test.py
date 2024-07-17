@@ -41,8 +41,9 @@ def generate_wordcloud_image(date, df_clean, image_path):
     return False
 
 @st.cache_data(persist="disk")
-def load_model():
-    with open('./gradient_boosting_model_label_count.pkl', 'rb') as file:
+
+def load_model(file_path):
+    with open(file_path, 'rb') as file:
         model = pickle.load(file)
     return model
 
@@ -85,6 +86,7 @@ def main():
             st.write("선택한 날짜에 해당하는 데이터가 없습니다.")
     
     if st.button("Predict", use_container_width=True):
+        file_path = './gradient_boosting_model_label_count.pkl'
         model = load_model()
         # my_bar = st.progress(0)
 
