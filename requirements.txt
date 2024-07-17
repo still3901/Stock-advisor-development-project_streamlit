@@ -11,3 +11,4 @@ finance-datareader
 wordcloud
 ptl
 pandas_datareader
+scikit-learn
