@@ -10,3 +10,4 @@ matplotlib
 finance-datareader
 wordcloud
 ptl
+pandas_datareader
