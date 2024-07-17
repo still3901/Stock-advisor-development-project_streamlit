@@ -87,7 +87,7 @@ def main():
     
     if st.button("Predict", use_container_width=True):
         file_path = './gradient_boosting_model_label_count.pkl'
-        model = load_model()
+        model = load_model(file_path)
         # my_bar = st.progress(0)
 
         # for percent_complete in range(100):
